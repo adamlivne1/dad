@@ -1,175 +1,747 @@
-*{
-    padding: 0px 0px ;
-    margin: 0px;
+ul{
+    list-style: none;
 }
-
-.background{
-    align-content: center;
+.container{
+    margin: 0px auto;
+}
+.inner-header{
     display: flex;
-    justify-content: center;
-    color: #686f8c;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+#main-menu {
+   display: flex;
+}
+#main-menu a{
+    text-transform:uppercase ;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    color:white;
+}
+.pointer {cursor: pointer;}
+.logo{
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
     font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    display: block;
+}
+header{
+    position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0px;
+    transition: all 0.5s ease-in-out;
+}
+header.sticky{
+    background:#fff;
+    opacity: 0.9;
+    padding: 15px 0px;
+    box-shadow: 0px 5px 15px rgba(0, 0 0, 0.5);
+}
+header.sticky #main-menu a{
+    color: black;
+}
+header.sticky .logo{
+    color: black;
 }
 
-form{
-    background-color: #f6fafd;
-    padding-bottom: 100px;
-}
-button {
-    display: block !important;
-    margin: 0px auto 50px !important;
-    margin-bottom: 50px;
+
+
+
+
+
+
+.background1{
+    height: 400px; 
+    background-size: 100%;
+    background-image: url("https://www.setaswall.com/wp-content/uploads/2017/03/4K-Code-Programming-Text-Wallpaper-3840x2160.jpg"); 
+    padding-top: 100px ;
+    scroll-margin-top: 70px;
 }
 body{
-    font-size: 3%;
+    margin: 0px;
+
 }
-input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
-.background .container1{
-    align-self: flex-start;
-    flex:1;
-    padding-right: 1%;
-    padding-left: 3%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+.background1 h1{
+    margin-block-start: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(253, 253, 253);
+    border: 1px;
+    font-size: 50px;
 }
 
-.background .container2{
-    align-self: flex-start;
-    flex:1;
-    padding-right: 1%;
-    padding-left: 1%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+.background1 p{
+    margin-block-start: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: rgb(253, 253, 253);
+    text-align: center;
 }
-.background .container3{
-    align-self: flex-start;
-    flex:1;
-    padding-left: 1%;
-    padding-right: 3%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+.button{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
 }
-.background .container1 .email{
-    margin-top: 30px;
+.button button{
+    width: 200px;
+    height: 50px;
+    border-radius: 0%;
 }
-.background .container1 .trinhdohocvan{
-    margin-top: 30px;
+.button button:hover{
+    background: #2ebdff;
 }
-.background .container1 .ngaydangky{
-    margin-top: 30px;
-}
-.background .container2 .sodienthoai{
-    margin-top: 30px;
-}
-.background .container2 .ngoaingu{
-    margin-top: 30px;
-}
-.background .container3 .tinhthanh{
-    margin-top: 30px;
-}
-.background .container3 .hocluc{
-    margin-top: 30px;
+.background2 {
+    background-color: white;
+    height: 300px;
+    padding-top: 100px;
 }
 
-.background .container1 .mahoso input{
-    background-color: #e8ecef;
-    padding-left: 3%;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    width: 100%;
-    height: 55px;
-    border-radius: 10px;
+.background2 h1{
+    color: black;
+    display: flex;
+    justify-content: center;
 }
-.background .container1 .email input{
-    padding-left: 3%;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    width: 100%;
-    height: 55px; 
-    border-radius: 10px;
+.background2 .p {
+    display: flex;
+    padding: 10px 400px;
+    justify-content: space-around;
+}
+.background2 .p p{
+    color: black;
+    width: 500px;
+}
+.background3 {
+    height: 500px;
+    background-color: rgb(41, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:20px 400px ;
 }
 
+.background3 .web{
+    background-size: contain;
+    background-color:white;
+    width: 250px;
+    height: 480px;
+}
 
-.background .container1 .trinhdohocvan .select-trinhdo{
-    position: relative;
-    padding-left: 3%;
-    width: 100%;
-    height: 55px; 
-    border-radius: 10px;
+.background3 .mobile{
+    background-size: contain;
+    background-color:white;
+    width: 250px;
+    height: 480px;
 }
-.background .container1 .ngaydangky .input-ngaydangky{
-    padding-left: 3%;
-    padding-bottom: 20px;
+
+.background3 .tech{
+    background-size: contain;
+    background-color:white;
+    width: 250px;
+    height: 480px;
+}
+
+.background3 .cotmoi{
+    background-size: contain;
+    background-color:white;
+    width: 250px;
+    height: 480px;
+
+}.background3 .web:hover {
+    background: #2ebdff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebdff, #9b21ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebdff, #9b21ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}.background3 .mobile:hover {
+    background: #2ebdff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebdff, #9b21ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebdff, #9b21ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}.background3 .tech:hover {
+    background: #2ebdff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebdff, #9b21ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebdff, #9b21ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.background3 .cotmoi:hover {
+    background: #2ebdff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebdff, #9b21ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebdff, #9b21ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.background3 .web .text{
+    color: black;
+    display:flex;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+.background3 .web .text h1{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.background3 .web .text p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.background3 .mobile .text{
+    color: black;
+    display:flex;
+    flex-direction: column;
+    padding: 50px 20px;
+
+}
+.background3 .tech .text{
+    color: black;
+    display:flex;
+    flex-direction: column;
+    padding: 50px 20px;
+
+}
+.background3 .cotmoi .text{
+    color: black;
+    display:flex;
+    flex-direction: column;
+    padding: 50px 20px;
+
+}
+.background3 .mobile .text h1{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.background3 .mobile .text p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.background3 .tech .text h1{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.background3 .tech .text p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.background3 .cotmoi .text h1{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.background3 .cotmoi .text p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.background4 {
+    background-color: white;
+    height: 200px;
+    padding-top: 50px;
+}
+.background4 h1{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.background4 .p {
+    display: flex;
+    padding: 10px 300px;
+    justify-content: space-around;
+}
+.background4 .p p{
+    color: black;
+    width: 500px;
+    text-align: center;
+    width: 1000px;
+}
+.background5{
+    height: 300px;
+    display: flex;
+}
+.background5 .contact{
+    background-color: rgb(68, 149, 255);
+    color: white;
+    width: 50%;
     padding-top: 20px;
-    width: 100%;
-    height: 55px; 
-    background-color: #e8ecef;
-    border-radius: 10px;
 }
-.background .container1 .ngaydangky .input-ngaydangky::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
+.background5 .contact .text h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
 }
-.background .container2 .hoten .input-hoten{
-    padding-left: 3%;
-    padding-bottom: 20px;
+.background5 .contact .text p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.background5 .about{
+    background-color: rgb(41, 39, 39);
+    color: white;
+    width: 50%;
     padding-top: 20px;
-    width: 100%;
-    height: 55px;
-    border-radius: 10px;
 }
-.background .container2 .sodienthoai .input-sodienthoai{
-    padding-left: 3%;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    width: 100%;
-    height: 55px;
-    border-radius: 10px;
+.background5 .about .text h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
 }
-.background .container2 .ngoaingu .input-ngoaingu{
-    padding-left: 3%;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    width: 100%;
-    height: 55px;
-    border-radius: 10px;
-}.background .container3 .ngaysinh .input-ngaysinh{
-    padding-left: 3%;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    width: 100%;
-    height: 55px;
-    border-radius: 10px;
+.background5 .about .text p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
-.background .container3 .tinhthanh .select-tinhthanh{
-    padding-left: 3%;
-    width: 100%;
-    height: 55px;
-    border-radius: 10px;
+.background6 {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
 }
-.background .container3 .hocluc .input-hocluc{
-    padding-left: 3%;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    width: 100%;
-    height: 55px;
-    border-radius: 10px;
+.background6 h1{
+    font-size: 20px;
 }
-@media screen and (max-width: 460px) {
-    .background{
+@media screen and (max-width: 390px) {
+    .button button:hover{
+        background: #6d192e;
+    }
+    .background3 .web:hover {
+        background: #2ebdff; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2ebdff, #9b21ff); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2ebdff, #9b21ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }.background3 .mobile:hover {
+        background: #2ebdff; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2ebdff, #9b21ff); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2ebdff, #9b21ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }.background3 .tech:hover {
+        background: #2ebdff; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2ebdff, #9b21ff); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2ebdff, #9b21ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .background3 .cotmoi:hover {
+        background: #2ebdff; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2ebdff, #9b21ff); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2ebdff, #9b21ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .background1 h1 {
+      font-size: 100%;
+    }
+    .background1 p {
+        font-size: 50%;
+      }
+    .background1{
+        background-size: 100%;
+        height: auto;
+        padding-top : 0px;
+    }
+    .background1 .button button{
+        font-size: 12px;
+        width: fit-content;
+        height: fit-content;
+        padding-top: 0px;
+        background-color: orange;
+        color: black;
+    }
+    .background1 .button{
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    .background2 {
+        height: auto;
+        max-width: 100%;
+        padding-top: 0px;
+      }
+      .background2 h1{
+          font-size: 100%;
+      }
+      .background2 .p p{
+          font-size: 50%;
+  
+      }
+      .background2 .p p p{
+          font-size: 50%; 
+      }
+      .background2 .p {
+          padding: 0px 10px !important;
+  
+      }
+      .background3 {
+        height: auto;
+        max-width: 100%;
+        padding: 10px 0px;
+        display: grid;
+        grid-gap: 20px;
+        justify-content: space-evenly;
+        grid-template-columns: auto auto ;
+      }
+      .background3 .web .image img{
+          width: 100% ;
+          height: auto;
+          
+      }
+      .background3 .web{
+          width: 80px !important;
+          height: 180px !important;
+      }
+      .background3 .web .text {
+          padding: 0px 0px !important;
+      }
+      .background3 .web .text h1{
+          font-size: 12px !important;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+      }
+      .background3 .web .text p{
+          font-size: 8px !important;
+      }
+      .background3 .web .image{
+          background-size: cover !important;
+      }
+      .background3 .mobile{
+          width: 80px !important;
+          height: 180px !important;
+  
+      }
+      .background3 .mobile .image img{
+          width: 100% ;
+          height: auto;
+      }
+      .background3 .mobile .text{
+          padding: 0px 0px !important;
+      }
+      .background3 .mobile .text h1{
+          font-size: 12px !important;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+      }
+      .background3 .mobile .text p{
+          font-size: 8px !important;
+      }
+      .background3 .tech .text{
+          padding: 0px 0px !important;
+      }
+      .background3 .tech{
+          width: 80px !important;
+          height: 180px !important;
+          flex-direction: column;
+      }
+      .background3 .tech .image img{
+          width: 100% ;
+          height: auto;
+          
+      }
+      .background3 .tech .text h1{
+          font-size: 12px !important;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+      }
+      .background3 .tech .text p{
+          font-size: 8px !important;
+      }
+      .background3 .cotmoi .text{
+          padding: 0px 0px !important;
+      }
+      .background3 .cotmoi{
+          width: 80px !important;
+          height: 180px !important;
+      }
+      .background3 .cotmoi .image img{
+          width: 80px;
+          height: 57.38px;
+          
+      }
+      .background3 .cotmoi .text h1{
+          font-size: 12px !important;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+      }
+      .background3 .cotmoi .text p{
+          font-size: 8px !important;
+      }
+      .background4 {
+        height: auto;
+        max-width: 100%;
+        padding-top: 0px;
+      }
+      .background4 h1{
+          font-size: 100%;
+      }
+      .background4 .p p{
+          font-size: 50%;
+  
+      }
+      .background4 .p p p{
+          font-size: 50%; 
+      }
+      .background4 .p {
+          padding: 0px 10px !important;
+  
+      }
+      .background5 {
+        height: auto !important;
+        max-width: 100%;
+        padding-top: 0px;
+        display: flex;
         flex-direction: column;
-        display: inline;
     }
-    .background .container1{
-        padding:3% 7%;
+    .background5 .contact {
+        padding-top: 0px;
+        width: 100%  !important;
     }
-    .background .container2{
-        padding: 3% 7%;
+    .background5 .contact .text h1{
+        font-size: 100% !important;
     }
-    .background .container3{
-        padding: 3% 7%;
+    .background5 .contact .text p{
+        font-size: 50% !important   ;
     }
+    .background5 .about {
+        padding-top: 0px;
+        width: 100%  !important;
+    }
+    .background5 .about .text h1{
+        font-size: 100% !important;
+    }
+    .background5 .about .text p{
+        font-size: 50% !important   ;
+    }
+    .background6 {
+        height: auto !important;
+        max-width: 100%;
+        padding-top: 0px;
+    }
+    .background6 h1{
+        font-size: 50% !important;
+    }   
+}
+@media screen and (max-width: 820px) {
+    .button button:hover{
+        background: #6d192e;
+    }
+    .background3 .web:hover {
+        background: #2ebdff; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2ebdff, #9b21ff); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2ebdff, #9b21ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }.background3 .mobile:hover {
+        background: #2ebdff; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2ebdff, #9b21ff); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2ebdff, #9b21ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }.background3 .tech:hover {
+        background: #2ebdff; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2ebdff, #9b21ff); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2ebdff, #9b21ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .background3 .cotmoi:hover {
+        background: #2ebdff; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2ebdff, #9b21ff); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2ebdff, #9b21ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .background1 h1 {
+      font-size: 100%;
+    }
+    .background1 p {
+        font-size: 50%;
+      }
+    .background1{
+        background-size: 100%;
+        height: auto;
+        padding-top : 0px;
+    }
+    .background1 .button button{
+        font-size: 10px;
+        width: fit-content;
+        height: fit-content;
+        padding-top: 0px;
+        background-color: aqua;
+        color: #fff;
+    }
+    .background1 .button{
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    .background2 {
+        height: auto;
+        max-width: 100%;
+        padding-top: 0px;
+      }
+      .background2 h1{
+          font-size: 100%;
+      }
+      .background2 .p p{
+          font-size: 50%;
+  
+      }
+      .background2 .p p p{
+          font-size: 50%; 
+      }
+      .background2 .p {
+          padding: 0px 10px !important;
+  
+      }
+      .background3 {
+        height: auto;
+        max-width: 100%;
+        padding: 10px 0px;
+        display: grid;
+        grid-gap: 20px;
+        justify-content: space-evenly;
+        grid-template-columns: auto auto ;
+      }
+      .background3 .web .image img{
+          width: 100% ;
+          height: auto;
+          
+      }
+      .background3 .web{
+          width: 80px !important;
+          height: 180px !important;
+      }
+      .background3 .web .text {
+          padding: 0px 0px !important;
+      }
+      .background3 .web .text h1{
+          font-size: 12px !important;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+      }
+      .background3 .web .text p{
+          font-size: 8px !important;
+      }
+      .background3 .web .image{
+          background-size: cover !important;
+      }
+      .background3 .mobile{
+          width: 80px !important;
+          height: 180px !important;
+  
+      }
+      .background3 .mobile .image img{
+          width: 100% ;
+          height: auto;
+      }
+      .background3 .mobile .text{
+          padding: 0px 0px !important;
+      }
+      .background3 .mobile .text h1{
+          font-size: 12px !important;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+      }
+      .background3 .mobile .text p{
+          font-size: 8px !important;
+      }
+      .background3 .tech .text{
+          padding: 0px 0px !important;
+      }
+      .background3 .tech{
+          width: 80px !important;
+          height: 180px !important;
+          flex-direction: column;
+      }
+      .background3 .tech .image img{
+          width: 100% ;
+          height: auto;
+          
+      }
+      .background3 .tech .text h1{
+          font-size: 12px !important;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+      }
+      .background3 .tech .text p{
+          font-size: 8px !important;
+      }
+      .background3 .cotmoi .text{
+          padding: 0px 0px !important;
+      }
+      .background3 .cotmoi{
+          width: 80px !important;
+          height: 180px !important;
+      }
+      .background3 .cotmoi .image img{
+          width: 80px;
+          height: 57.38px;
+          
+      }
+      .background3 .cotmoi .text h1{
+          font-size: 12px !important;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+      }
+      .background3 .cotmoi .text p{
+          font-size: 8px !important;
+      }
+      .background4 {
+        height: auto;
+        max-width: 100%;
+        padding-top: 0px;
+      }
+      .background4 h1{
+          font-size: 100%;
+      }
+      .background4 .p p{
+          font-size: 50%;
+  
+      }
+      .background4 .p p p{
+          font-size: 50%; 
+      }
+      .background4 .p {
+          padding: 0px 10px !important;
+  
+      }
+      .background5 {
+        height: auto !important;
+        max-width: 100%;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .background5 .contact {
+        padding-top: 0px;
+        width: 100%  !important;
+    }
+    .background5 .contact .text h1{
+        font-size: 100% !important;
+    }
+    .background5 .contact .text p{
+        font-size: 50% !important   ;
+    }
+    .background5 .about {
+        padding-top: 0px;
+        width: 100%  !important;
+    }
+    .background5 .about .text h1{
+        font-size: 100% !important;
+    }
+    .background5 .about .text p{
+        font-size: 50% !important   ;
+    }
+    .background6 {
+        height: auto !important;
+        max-width: 100%;
+        padding-top: 0px;
+    }
+    .background6 h1{
+        font-size: 50% !important;
+    }   
 }
