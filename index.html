@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <form id="register-form" class="form" onsubmit=" return validate();">
+        <div class="background">
+            <div class="container1">
+                <div>
+                    <div class="mahoso" id="ID-ctn">
+                        <label for="mahoso" name="label-ID" class="form-label">Mã hồ sơ </label>
+                        <inpu id="ID" class="form-control input-mahoso" placeholder="Nhập mã hồ sơ"
+                            onchange="inputingID()" onblur="checkName()" value="">
+                        <span id="errorID"
+                        style="font-weight: 400;font-size: 14px;color: red;"></span>
+                    </div>
+                    <div class="email ">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="text" id="email" class="form-control input-email" placeholder="Nhập email"  onfocus="inputing()" onblur="checkEmail()">
+                        <span style="font-weight: 400;font-size: 14px;  color:red" id="errorEmail" ></span>
+                    </div>
+
+                    <div class="trinhdohocvan ">
+                        <label for="trinhdohocvan" class="form-label">Trình độ học vấn</label><br>
+                        <select class="select-trinhdo form-select " id="hocvan" onfocus="inputing()">
+                            <option value="" selected disabled selected>Trình độ học vấn</option>
+                            <option value="1">Tiểu học </option>
+                            <option value="2">Trung học cơ sở </option>
+                            <option value="3">Trung học phổ thông </option>
+                        </select>
+                        <span style="font-weight: 400;font-size: 14px;color:red" id="errorHocVan"></span>
+                    </div>
+
+                    <div class="ngaydangky ">
+                        <label for="ngaydangky" class="form-label">Ngày đăng ký</label> <br>
+                        <input type="date" class="form-control input-ngaydangky" id="ngaydangky" onfocus="inputing()">
+                        <span style="font-weight: 400;font-size: 14px;color:red" id="errorNgayDangKy"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container2 ">
+                <div>
+                    <div class=" hoten form-group ">
+                        <label for="hoten" id="label-fullname" class="form-label">Họ tên HS </label>
+                        <input type="text" name="fullname" id="fullname" class="form-control input-hoten"
+                            placeholder="VD: Nguyễn Văn A">
+                        <span style="font-weight: 400;font-size: 14px;color:red" id="errorFullname"></span>
+                    </div>
+                    <div class="sodienthoai ">
+                        <label for="sodienthoai" class="form-label">Số điện thoại</label>
+                        <input type="tel" class="form-control input-sodienthoai" id="phone"
+                            placeholder="Nhập số điện thoại">
+                        <span style="font-weight: 400;font-size: 14px;color:red" id="errorPhone"></span>
+                    </div>
+                    <div class=" ngoaingu">
+                        <label for="ngoaingu" class="form-label">Trình độ ngoại ngữ</label>
+                        <input type="text" id="ngoaingu" class="form-control input-ngoaingu"
+                            placeholder="Trình độ ngoại ngữ">
+                        <span style="font-weight: 400;font-size: 14px;color:red" id="errorNgoaiNgu"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container3">
+                <div>
+                    <div class="ngaysinh ">
+                        <label for="ngaysinh" class="form-label">Ngày sinh</label> <br>
+                        <input type="date" id="ngaysinh" class="form-control input-ngaysinh">
+                        <span style="font-weight: 400;font-size: 14px;color:red" id="errorNgaySinh"></span>
+                    </div>
+                    <div class=" tinhthanh">
+                        <label for="tinhthanh" class="form-label">Tỉnh thành</label>
+                        <select class="select-tinhthanh form-select" id="tinhthanh"> <br>
+                            <option value="" selected disabled selected>Tỉnh / Thành phố</option>
+                            <option value="An Giang">An Giang
+                            <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
+                            <option value="Bắc Giang">Bắc Giang
+                            <option value="Bắc Kạn">Bắc Kạn
+                            <option value="Bạc Liêu">Bạc Liêu
+                            <option value="Bắc Ninh">Bắc Ninh
+                            <option value="Bến Tre">Bến Tre
+                            <option value="Bình Định">Bình Định
+                            <option value="Bình Dương">Bình Dương
+                            <option value="Bình Phước">Bình Phước
+                            <option value="Bình Thuận">Bình Thuận
+                            <option value="Bình Thuận">Bình Thuận
+                            <option value="Cà Mau">Cà Mau
+                            <option value="Cao Bằng">Cao Bằng
+                            <option value="Đắk Lắk">Đắk Lắk
+                            <option value="Đắk Nông">Đắk Nông
+                            <option value="Điện Biên">Điện Biên
+                            <option value="Đồng Nai">Đồng Nai
+                            <option value="Đồng Tháp">Đồng Tháp
+                            <option value="Đồng Tháp">Đồng Tháp
+                            <option value="Gia Lai">Gia Lai
+                            <option value="Hà Giang">Hà Giang
+                            <option value="Hà Nam">Hà Nam
+                            <option value="Hà Tĩnh">Hà Tĩnh
+                            <option value="Hải Dương">Hải Dương
+                            <option value="Hậu Giang">Hậu Giang
+                            <option value="Hòa Bình">Hòa Bình
+                            <option value="Hưng Yên">Hưng Yên
+                            <option value="Khánh Hòa">Khánh Hòa
+                            <option value="Kiên Giang">Kiên Giang
+                            <option value="Kon Tum">Kon Tum
+                            <option value="Lai Châu">Lai Châu
+                            <option value="Lâm Đồng">Lâm Đồng
+                            <option value="Lạng Sơn">Lạng Sơn
+                            <option value="Lào Cai">Lào Cai
+                            <option value="Long An">Long An
+                            <option value="Nam Định">Nam Định
+                            <option value="Nghệ An">Nghệ An
+                            <option value="Ninh Bình">Ninh Bình
+                            <option value="Ninh Thuận">Ninh Thuận
+                            <option value="Phú Thọ">Phú Thọ
+                            <option value="Quảng Bình">Quảng Bình
+                            <option value="Quảng Bình">Quảng Bình
+                            <option value="Quảng Ngãi">Quảng Ngãi
+                            <option value="Quảng Ninh">Quảng Ninh
+                            <option value="Quảng Trị">Quảng Trị
+                            <option value="Sóc Trăng">Sóc Trăng
+                            <option value="Sơn La">Sơn La
+                            <option value="Tây Ninh">Tây Ninh
+                            <option value="Thái Bình">Thái Bình
+                            <option value="Thái Nguyên">Thái Nguyên
+                            <option value="Thanh Hóa">Thanh Hóa
+                            <option value="Thừa Thiên Huế">Thừa Thiên Huế
+                            <option value="Tiền Giang">Tiền Giang
+                            <option value="Trà Vinh">Trà Vinh
+                            <option value="Tuyên Quang">Tuyên Quang
+                            <option value="Vĩnh Long">Vĩnh Long
+                            <option value="Vĩnh Phúc">Vĩnh Phúc
+                            <option value="Yên Bái">Yên Bái
+                            <option value="Phú Yên">Phú Yên
+                            <option value="Tp.Cần Thơ">Tp.Cần Thơ
+                            <option value="Tp.Đà Nẵng">Tp.Đà Nẵng
+                            <option value="Tp.Hải Phòng">Tp.Hải Phòng
+                            <option value="Tp.Hà Nội">Tp.Hà Nội
+                            <option value="TP  HCM">TP HCM
+                        </select>
+                        <span style="font-weight: 400;font-size: 14px;color:red" id="errorTinhThanh"></span>
+                    </div>
+                    <div class="hocluc ">
+                        <label for="hocluc" class="form-label">Học lực trong năm gần nhất</label>
+                        <input type="text" class="form-control input-hocluc" id="hocluc" placeholder="Nhập điểm">
+                        <span style="font-weight: 400;font-size: 14px;color:red" id="errorHocLuc"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary form-submit" type="submit">Submit form</button>
+    </form>
+    <script>
+        function checkName(){
+            var ID = document.getElementById('ID').value;
+            var errorID = document.getElementById('errorID');
+            if(ID == '' || ID == null){
+                errorID.innerHTML= "*Vui lòng nhập mã hồ sơ!";
+            }
+        }
+        function checkEmail(){
+            var email = document.getElementById('email').value;
+            var errorEmail = document.getElementById('errorEmail');
+            if (email == '' || email == null) {
+                errorEmail.innerHTML = "*Vui lòng nhập Email";
+            }
+        }
+        // function checkTrinhDo(){
+        //     var ID = document.getElementById('ID').value;
+        //     var errorID = document.getElementById('errorID');
+        //     if(ID == '' || ID == null){
+        //         errorID.innerHTML= "Họ tên đang để trống!";
+        //     }
+        // }
+        // function checkNgayDangKy(){
+        //     var ID = document.getElementById('ID').value;
+        //     var errorID = document.getElementById('errorID');
+        //     if(ID == '' || ID == null){
+        //         errorID.innerHTML= "Họ tên đang để trống!";
+        //     }
+        // }
+
+        function inputingID() {
+            var ID = document.getElementById('ID').value;
+            var errorID = document.getElementById('errorID');
+            if(ID != '' || ID != null){
+                errorID.innerHTML= "";
+            }
+        }
+        function validate() {
+
+            var ID = document.getElementById('ID').value;
+            var email = document.getElementById('email').value;
+            var hocvan = document.getElementById('hocvan').value;
+            var ngaydangky = document.getElementById('ngaydangky').value;
+            var fullname = document.getElementById('fullname').value;
+            var phone = document.getElementById('phone').value;
+            var ngoaingu = document.getElementById('ngoaingu').value;
+            var ngaysinh = document.getElementById('ngaysinh').value;
+            var tinhthanh = document.getElementById('tinhthanh').value;
+            var hocluc = document.getElementById('hocluc').value;
+
+            var errorID = document.getElementById('errorID');
+            var errorEmail = document.getElementById('errorEmail');
+            var errorHocVan = document.getElementById('errorHocVan');
+            var errorNgayDangKy = document.getElementById('errorNgayDangKy')
+            var errorFullname = document.getElementById('errorFullname');
+            var errorPhone = document.getElementById('errorPhone');
+            var errorNgoaiNgu = document.getElementById('errorNgoaiNgu');
+            var errorNgaySinh = document.getElementById('errorNgaySinh');
+            var errorTinhThanh = document.getElementById('errorTinhThanh');
+            var errorHocLuc = document.getElementById('errorHocLuc');
+
+            var regexFullname = /^[^\d+]*[\d+]{0}[^\d+]*$/;
+            var regexEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            var regexID = /(?i)^(?=.*[A-Z][A-Z])[0-9]{5}$/;
+            var regexPhone = /^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/;
+            var regexHocLuc = /^(([0-9]{1}\s)|([0-3]{1}\.\d{0,2}\s))|[4]\.[0]{0,2}\s/;
+
+
+
+            if (ID == '' || ID == null) {
+                errorID.innerHTML = "*Vui lòng nhập mã hồ sơ";
+            } else if (!regexID.test(ID)) {
+                errorID.innerHTML = "*Mã hồ sơ không hợp lệ"
+            } else {
+                errorID.innerHTML = "";
+            }
+
+            if (email == '' || email == null) {
+                errorEmail.innerHTML = "*Vui lòng nhập Email";
+            } else if (!regexEmail.test(email)) {
+                errorEmail.innerHTML = "*Email không hợp lệ!"
+            } else {
+                errorEmail.innerHTML = "";
+            }
+
+            if (hocvan == '') {
+                errorHocVan.innerHTML = "*Vui lòng chọn trình độ học vấn";
+            } else {
+                errorHocVan.innerHTML = "";
+            }
+
+            if (ngaydangky == '' || ngaydangky == null) {
+                errorNgayDangKy.innerHTML = "*Vui lòng nhập ngày đăng ký";
+                // } else if (!regexNgayDangKy.test(ngaydangky)) {
+                //     errorNgayDangKy.innerHTML = "Ngày đăng ký không hợp lệ!"
+            } else {
+                errorNgayDangKy.innerHTML = "";
+            }
+
+            if (fullname == '' || fullname == null) {
+                errorFullname.innerHTML = "*Vui lòng nhập họ tên";
+            } else if (!regexFullname.test(fullname)) {
+                errorFullname.innerHTML = "*Họ tên không hợp lệ!"
+            } else {
+                errorFullname.innerHTML = "";
+            }
+
+            if (phone == '' || phone == null) {
+                errorPhone.innerHTML = "*Vui lòng nhập số điện thoại ";
+            } else if (!regexPhone.test(phone)) {
+                errorPhone.innerHTML = "*Họ tên không hợp lệ!"
+            } else {
+                errorPhone.innerHTML = "";
+            }
+
+            if (ngoaingu == '' || ngoaingu == null) {
+                errorNgoaiNgu.innerHTML = "*Vui lòng nhập trình độ ngoại ngữ ";
+            } else {
+                errorNgoaiNgu.innerHTML = "";
+            }
+
+            if (ngaysinh == '' || ngaysinh == null) {
+                errorNgaySinh.innerHTML = "*Vui lòng nhập ngày sinh ";
+            } else {
+                errorNgayDangKy.innerHTML = "";
+            }
+
+            if (tinhthanh == '' || tinhthanh == null) {
+                errorTinhThanh.innerHTML = "*Vui lòng nhập tỉnh thành ";
+            } else {
+                errorTinhThanh.innerHTML = "";
+            }
+
+            if (hocluc == '' || hocluc == null) {
+                errorHocLuc.innerHTML = "*Vui lòng nhập trình độ ngoại ngữ ";
+            } else if (!regexHocLuc.test(hocluc)) {
+                errorHocLuc.innerHTML = "*Ví dụ 5.5"
+            } else {
+                errorHocLuc.innerHTML = "";
+            }
+            return false;
+
+        }
+    </script>
+</body>
+
+</html>

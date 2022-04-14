@@ -1,0 +1,175 @@
+*{
+    padding: 0px 0px ;
+    margin: 0px;
+}
+
+.background{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    color: #686f8c;
+    font-weight: bold;
+    width: 100%;
+}
+
+form{
+    background-color: #f6fafd;
+    padding-bottom: 100px;
+}
+button {
+    display: block !important;
+    margin: 0px auto 50px !important;
+    margin-bottom: 50px;
+}
+body{
+    font-size: 3%;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+.background .container1{
+    align-self: flex-start;
+    flex:1;
+    padding-right: 1%;
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.background .container2{
+    align-self: flex-start;
+    flex:1;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.background .container3{
+    align-self: flex-start;
+    flex:1;
+    padding-left: 1%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.background .container1 .email{
+    margin-top: 30px;
+}
+.background .container1 .trinhdohocvan{
+    margin-top: 30px;
+}
+.background .container1 .ngaydangky{
+    margin-top: 30px;
+}
+.background .container2 .sodienthoai{
+    margin-top: 30px;
+}
+.background .container2 .ngoaingu{
+    margin-top: 30px;
+}
+.background .container3 .tinhthanh{
+    margin-top: 30px;
+}
+.background .container3 .hocluc{
+    margin-top: 30px;
+}
+
+.background .container1 .mahoso input{
+    background-color: #e8ecef;
+    padding-left: 3%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+}
+.background .container1 .email input{
+    padding-left: 3%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: 55px; 
+    border-radius: 10px;
+}
+
+
+.background .container1 .trinhdohocvan .select-trinhdo{
+    position: relative;
+    padding-left: 3%;
+    width: 100%;
+    height: 55px; 
+    border-radius: 10px;
+}
+.background .container1 .ngaydangky .input-ngaydangky{
+    padding-left: 3%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: 55px; 
+    background-color: #e8ecef;
+    border-radius: 10px;
+}
+.background .container1 .ngaydangky .input-ngaydangky::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.background .container2 .hoten .input-hoten{
+    padding-left: 3%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+}
+.background .container2 .sodienthoai .input-sodienthoai{
+    padding-left: 3%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+}
+.background .container2 .ngoaingu .input-ngoaingu{
+    padding-left: 3%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+}.background .container3 .ngaysinh .input-ngaysinh{
+    padding-left: 3%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+}
+.background .container3 .tinhthanh .select-tinhthanh{
+    padding-left: 3%;
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+}
+.background .container3 .hocluc .input-hocluc{
+    padding-left: 3%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 460px) {
+    .background{
+        flex-direction: column;
+        display: inline;
+    }
+    .background .container1{
+        padding:3% 7%;
+    }
+    .background .container2{
+        padding: 3% 7%;
+    }
+    .background .container3{
+        padding: 3% 7%;
+    }
+}
